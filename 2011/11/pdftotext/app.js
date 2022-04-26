@@ -40,9 +40,9 @@ function App(){
             var layers = [];
             var nodes = document.querySelectorAll(".textLayer > div");
             for (var j = 0; j < nodes.length; j++){
-              layers.push(nodes[j].textContent + "\n");
+              layers.push(nodes[j].textContent + "\n\n");
             }
-            self.sendOutput(layers.join("\n"));
+            self.sendOutput(layers.join("\n\n"));
             
             self.setMessage("Done!");
           }, 1000);
